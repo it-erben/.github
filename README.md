@@ -2,6 +2,9 @@
 
 Unterlagen für meine Kurse bei der GFU Cyrus.
 
-## Lizenz
+## Lizenzhinweis
+Diese Schulungsunterlagen ("GFU-Kurse") von Alexander Erben sind lizenziert unter der Creative-Commons-Lizenz CC BY-NC-SA 4.0 (Namensnennung – Nicht kommerziell – Weitergabe unter gleichen Bedingungen).
 
-**GFU-Kurse** © 2025 von Alexander Erben ist lizensiert mit [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Abweichende Nutzungsrechte für Auftraggeber oder Schulungspartner werden gesondert vertraglich geregelt.
