@@ -36,7 +36,8 @@
   in den Commit.
 - Deklarative Fakten schreiben. Keine Personalpronomen („ich“, „wir“, „du“).
   Keine Leseransprache: kein „beachte, dass…“, „wie man sieht…“, „wir haben uns
-  entschieden…“, „das sollte helfen…“.
+  entschieden…“, „das sollte helfen…“. Hier gilt die Regel ohne Ausnahme —
+  dieses Repo enthält kein Lehrmaterial.
 - Nicht erzählen. Keine Historie, was zuerst versucht wurde, was scheiterte oder
   welche Alternativen erwogen wurden.
 - Keine Füll-Verben ohne Konkretes. „Aufräumen“, „verbessern“, „refactoren“
@@ -48,6 +49,7 @@
 ## Vor dem Abschluss
 
 - Lint, Tests und Build des Projekts für alles Berührte ausführen.
+- `pre-commit run --all-files` laufen lassen und alle Befunde beheben.
 - Nicht „fertig“ behaupten, ohne die Prüfung ausgeführt zu haben. Belege vor
   Behauptungen.
 - Alle TODO-Marker entfernen, die du in deiner Sitzung hinzugefügt hast, und
@@ -57,3 +59,27 @@
   etwas offen bleibt, dem Nutzer außerhalb von Code, Docs, Markdown, Kommentaren,
   PR-Beschreibungen, Commit-Nachrichten oder allem anderen in diesem Repo und
   seiner angeschlossenen Pipeline Bescheid geben.
+
+## Aufbau dieses Repos
+
+Dieses Repo trägt genau eine versionierte Datei: `README.md`. GitLab zeigt sie
+als Beschreibung der Gruppe `it-erben/gfu` an. Sie nennt, wofür die Gruppe da
+ist, und den Lizenzhinweis auf CC BY-NC-SA 4.0.
+
+Kein Kursmaterial, keine Folien, keine Labs. Inhalte gehören in das Repo des
+jeweiligen Kurses.
+
+## Fallstricke dieses Repos
+
+- **Die `README.md` ist öffentlich sichtbar.** Sie ist die Landeseite der
+  GFU-Gruppe. Keine internen Notizen, keine Kundennamen, keine Preise.
+- **Der Lizenzabschnitt ist rechtlich relevant.** Die Nennung von
+  CC BY-NC-SA 4.0 und der Vorbehalt für abweichende Vereinbarungen mit
+  Auftraggebern bleiben, solange sie nicht ausdrücklich geändert werden
+  sollen. Dieselbe Lizenz steht im `footer` der Foliensätze mehrerer
+  Kursrepos; eine Änderung hier zieht dort nach.
+- **Es gibt keine `.gitlab-ci.yml`.** Nichts wird gebaut, nichts wird
+  released. Der Scope einer Commit-Nachricht routet hier nichts.
+- **`.pre-commit-config.yaml` ist nicht versioniert.** Sie liegt lokal und
+  bringt markdownlint-cli2, yamllint und lychee mit — dieselben Hooks wie in
+  den Kursrepos.
