@@ -68,6 +68,8 @@ Dieses Repo ist das Organisationsprofil von `it-erben` auf GitHub.
   und den Lizenzhinweis auf CC BY-NC-SA 4.0.
 - `default.json` ist die geteilte Renovate-Konfiguration. Die anderen
   Repositories binden sie über `extends: ["local>it-erben/.github"]` ein.
+- `renovate.json` schaltet Renovate für dieses Repository ab. Es hat keine
+  Abhängigkeiten, ohne die Datei entstünde ein Onboarding-Pull-Request.
 - `README.md` beschreibt beides für den Blick ins Repository selbst.
 
 Kein Kursmaterial, keine Folien, keine Labs. Inhalte gehören in das Repo des

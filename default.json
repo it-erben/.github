@@ -1,13 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
-  "enabledManagers": ["github-actions"],
-  "dependencyDashboard": true,
+  "description": "Geteilte Renovate-Konfiguration der Organisation it-erben.",
+  "extends": [
+    "config:recommended"
+  ],
+  "enabledManagers": [
+    "github-actions"
+  ],
+  "dependencyDashboard": false,
   "packageRules": [
     {
       "description": "Aktualisierungen der eigenen Workflows laufen ohne Zutun durch.",
-      "matchManagers": ["github-actions"],
-      "matchPackageNames": ["it-erben/ci"],
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "it-erben/ci"
+      ],
       "automerge": true,
       "platformAutomerge": true
     }

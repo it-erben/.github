@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Dieses Repository hat keine Abhängigkeiten. Der Eintrag verhindert den Onboarding-Pull-Request.",
+  "enabled": false
+}
