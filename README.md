@@ -1,10 +1,16 @@
-# GFU-Kurse
+# .github
 
-Unterlagen für meine Kurse bei der GFU Cyrus.
+Organisationsprofil von [it-erben](https://github.com/it-erben) auf GitHub.
 
-## Lizenzhinweis
-Diese Schulungsunterlagen ("GFU-Kurse") von Alexander Erben sind lizenziert unter der Creative-Commons-Lizenz CC BY-NC-SA 4.0 (Namensnennung – Nicht kommerziell – Weitergabe unter gleichen Bedingungen).
+`profile/README.md` erscheint auf der Startseite der Organisation und trägt
+den Kurskatalog samt Lizenzhinweis.
 
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+`default.json` ist die geteilte Renovate-Konfiguration. Repositories binden
+sie so ein:
 
-Abweichende Nutzungsrechte für Auftraggeber oder Schulungspartner werden gesondert vertraglich geregelt.
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>it-erben/.github"]
+}
+```

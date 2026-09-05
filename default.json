@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["github-actions"],
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "description": "Aktualisierungen der eigenen Workflows laufen ohne Zutun durch.",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["it-erben/ci"],
+      "automerge": true,
+      "platformAutomerge": true
+    }
+  ]
+}
