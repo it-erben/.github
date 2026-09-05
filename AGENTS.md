@@ -62,24 +62,30 @@
 
 ## Aufbau dieses Repos
 
-Dieses Repo trägt genau eine versionierte Datei: `README.md`. GitLab zeigt sie
-als Beschreibung der Gruppe `it-erben/gfu` an. Sie nennt, wofür die Gruppe da
-ist, und den Lizenzhinweis auf CC BY-NC-SA 4.0.
+Dieses Repo ist das Organisationsprofil von `it-erben` auf GitHub.
+
+- `profile/README.md` erscheint auf github.com/it-erben. Sie nennt die Kurse
+  und den Lizenzhinweis auf CC BY-NC-SA 4.0.
+- `default.json` ist die geteilte Renovate-Konfiguration. Die anderen
+  Repositories binden sie über `extends: ["local>it-erben/.github"]` ein.
+- `README.md` beschreibt beides für den Blick ins Repository selbst.
 
 Kein Kursmaterial, keine Folien, keine Labs. Inhalte gehören in das Repo des
 jeweiligen Kurses.
 
 ## Fallstricke dieses Repos
 
-- **Die `README.md` ist öffentlich sichtbar.** Sie ist die Landeseite der
-  GFU-Gruppe. Keine internen Notizen, keine Kundennamen, keine Preise.
+- **`profile/README.md` ist öffentlich sichtbar.** Sie ist die Startseite der
+  Organisation. Keine internen Notizen, keine Kundennamen, keine Preise.
 - **Der Lizenzabschnitt ist rechtlich relevant.** Die Nennung von
   CC BY-NC-SA 4.0 und der Vorbehalt für abweichende Vereinbarungen mit
   Auftraggebern bleiben, solange sie nicht ausdrücklich geändert werden
   sollen. Dieselbe Lizenz steht im `footer` der Foliensätze mehrerer
   Kursrepos; eine Änderung hier zieht dort nach.
-- **Es gibt keine `.gitlab-ci.yml`.** Nichts wird gebaut, nichts wird
-  released. Der Scope einer Commit-Nachricht routet hier nichts.
+- **Eine Änderung an `default.json` wirkt sofort auf alle Repositories.**
+  Renovate liest den Preset bei jedem Lauf frisch, ohne Version dazwischen.
+- **Es gibt keine Pipeline.** Nichts wird gebaut, nichts wird released. Der
+  Scope einer Commit-Nachricht routet hier nichts.
 - **`.pre-commit-config.yaml` ist nicht versioniert.** Sie liegt lokal und
   bringt markdownlint-cli2, yamllint und lychee mit — dieselben Hooks wie in
   den Kursrepos.
