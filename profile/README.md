@@ -16,6 +16,7 @@ Unterlagen für die Kurse von Alexander Erben bei der GFU Cyrus.
 | Keycloak                                 | [training-keycloak](https://github.com/it-erben/training-keycloak)                         |
 | Docker und Kubernetes                    | [training-kubernetes](https://github.com/it-erben/training-kubernetes)                     |
 | Containers and Kubernetes (EN)           | [training-kubernetes-en](https://github.com/it-erben/training-kubernetes-en)               |
+| PostgreSQL für Entwickler auf Kubernetes | [training-postgres-advanced](https://github.com/it-erben/training-postgres-advanced)       |
 | Spring Framework                         | [training-spring-framework](https://github.com/it-erben/training-spring-framework)         |
 
 Alle Kurs-Repositories tragen das Topic
