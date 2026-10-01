@@ -5,10 +5,45 @@
     "config:recommended"
   ],
   "enabledManagers": [
-    "github-actions"
+    "github-actions",
+    "maven",
+    "gradle",
+    "npm",
+    "nuget",
+    "pip_requirements",
+    "dockerfile",
+    "docker-compose",
+    "helm-values",
+    "helmv3",
+    "terraform",
+    "pre-commit"
   ],
+  "pre-commit": {
+    "enabled": true
+  },
   "dependencyDashboard": false,
   "packageRules": [
+    {
+      "description": "Minor- und Patch-Anhebungen außerhalb der Workflows kommen je Repository in einem Pull Request.",
+      "matchManagers": [
+        "maven",
+        "gradle",
+        "npm",
+        "nuget",
+        "pip_requirements",
+        "dockerfile",
+        "docker-compose",
+        "helm-values",
+        "helmv3",
+        "terraform",
+        "pre-commit"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "minor- und patch-updates"
+    },
     {
       "description": "Aktualisierungen der eigenen Workflows laufen ohne Zutun durch.",
       "matchManagers": [
